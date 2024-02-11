@@ -11,6 +11,10 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .custom-button:hover {
     background-color: #45a049; /* Darker Green */
