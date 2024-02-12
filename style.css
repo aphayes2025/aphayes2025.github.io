@@ -40,14 +40,21 @@ section {
 
 .photos{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.photo:nth-child(2){
-    transition-delay: 250ms;
+.photos-hidden{
+    width: calc(33.33% - 20px); /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
-.photo:nth-child(3){
-    transition-delay: 500ms;
+img{
+    width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeInBounce {
