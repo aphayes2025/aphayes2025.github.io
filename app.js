@@ -12,3 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('yesBtn').addEventListener('click', function() {
+    document.getElementById('response-text-yes').classList.add('show');
+});
+
+document.getElementById('noBtn').addEventListener('click', function() {
+    document.getElementById('response-text-no').classList.add('show');
+});

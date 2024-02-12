@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script> <!-- Added defer attribute -->
     <title>Lauren Patricia Fowler</title>
 </head>
 <body>
@@ -61,11 +61,18 @@
         <section class="fade-in-section">
             <h2>Lauren will you be my Valentine?</h2>
             <div class="button-container">
-                <button class="yes-button">Yes</button>
-                <button class="no-button">No</button>
+                <button class="yes-button" id="yesBtn">Yes</button>
+                <button class="no-button" id="noBtn">No</button>
+            </div>
+            <div id="response-text-yes" class="response-text-yes">
+                <p>Thanks for being my Valentine Lauren, I miss you!</p>
+                <p class="heart">♥</p>
+            </div>
+            <div id="response-text-no" class="response-text-no">
+                <p>Your obviously not Lauren Fowler, leave!</p>
             </div>
         </section>
-    </div>
 
+    </div>
 </body>
-</html
+</html>
